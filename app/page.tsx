@@ -67,7 +67,7 @@ export default function Home() {
 
           <div
             id="assets"
-            className="flex flex-col items-center justify-center mt-4"
+            className="flex flex-col items-center justify-center lg:mt-2"
           >
             <a href="/assets">
               <Image
@@ -84,10 +84,8 @@ export default function Home() {
               Brand Assets
             </a>
           </div>
-          <div
-            id="socials"
-            className="flex items-center gap-5 justify-center mt-4 lg:mt-12"
-          >
+
+          <div id="socials" className="flex items-center gap-5 justify-center">
             <a
               className="text-xl drop-shadow-md"
               href="https://twitter.com/avaxmeowcat"
@@ -112,6 +110,10 @@ export default function Home() {
             >
               Discord
             </a>
+          </div>
+          <div className="text-xs lg:text-base">
+            <p>Enquiries: meowcat@meowcat.xyz</p>
+            <p>Business: meowcat.avalaunche@gmail.com</p>
           </div>
         </div>
       </main>
