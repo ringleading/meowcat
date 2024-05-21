@@ -4,7 +4,6 @@
   position: fixed;
   cursor: default;
   top: 0;
-  left: -1.6rem;
   font-weight: 900;
   font-size: 16.3vh;
   text-transform: uppercase;
@@ -26,6 +25,10 @@
     0 25em 0 hsla(0, 0%, 100%, 0.5), 0 26em 0 hsla(0, 0%, 100%, 0.5),
     0 27em 0 hsla(0, 0%, 100%, 0.5), 0 28em 0 hsla(0, 0%, 100%, 0.5),
     0 29em 0 hsla(0, 0%, 100%, 0.5);
+}
+
+.repeating {
+  left: -1.6rem;
 }
 
 .repeating_right {
