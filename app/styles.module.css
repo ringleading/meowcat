@@ -1,3 +1,16 @@
+@media screen and (max-width: 768px) {
+  .repeating {
+    font-size: 4.2vh;
+    opacity: 0.3;
+    left: 0.8rem;
+  }
+  .repeating_right {
+    font-size: 4.2vh;
+    opacity: 0.3;
+    right: 0.8rem;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .repeating {
     font-size: 8.2vh;
