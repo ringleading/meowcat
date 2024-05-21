@@ -1,3 +1,22 @@
+@media screen and (max-width: 1440px) {
+  .repeating {
+    font-size: 8.2vh;
+    left: 0.8rem;
+  }
+  .repeating_right {
+    font-size: 8.2vh;
+    right: 0.8rem;
+  }
+}
+
+.repeating {
+  left: -1.6rem;
+}
+
+.repeating_right {
+  right: -1.6rem;
+}
+
 .repeating,
 .repeating_right {
   color: #fbfbfb;
@@ -25,12 +44,4 @@
     0 25em 0 hsla(0, 0%, 100%, 0.5), 0 26em 0 hsla(0, 0%, 100%, 0.5),
     0 27em 0 hsla(0, 0%, 100%, 0.5), 0 28em 0 hsla(0, 0%, 100%, 0.5),
     0 29em 0 hsla(0, 0%, 100%, 0.5);
-}
-
-.repeating {
-  left: -1.6rem;
-}
-
-.repeating_right {
-  right: -1.6rem;
 }
