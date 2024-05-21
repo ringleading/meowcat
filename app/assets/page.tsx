@@ -8,8 +8,16 @@ import meow_head from "@/public/assets/images/meow_head.webp";
 export default function Assets() {
   return (
     <div>
-      <a className="absolute top-0 hover:scale-110" href="/">
-        <Image src={meow_head} alt="meow_home" width={100} height={100}></Image>
+      <a
+        className="absolute top-0 hover:scale-110 w-[60px] h-[60px] lg:w-[100px] lg:h-[100px]"
+        href="/"
+      >
+        <Image
+          src={meow_head}
+          alt="meow_home"
+          layout="fill"
+          objectFit="contain"
+        ></Image>
       </a>
       <main className="container mx-auto text-white">
         <div
