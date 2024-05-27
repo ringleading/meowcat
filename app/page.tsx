@@ -43,30 +43,6 @@ export default function Home() {
             className="flex items-center justify-center gap-2 flex-row"
           >
             <p className="">Trade on:</p>
-
-            <Link
-              href="https://www.okx.com/web3/dex-swap#inputChain=43114&inputCurrency=0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e&outputChain=43114&outputCurrency=0x8ad25b0083c9879942a64f00f20a70d3278f6187"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <Button
-                variant="ghost"
-                _hover={{ transform: "scale(1.05)" }}
-                _active={{
-                  transform: "scale(0.95)",
-                }}
-              >
-                <Image
-                  src={OKX_logo_white}
-                  alt="okx_logo_white"
-                  height={50}
-                  width={50}
-                  decoding="async"
-                  className="relative"
-                  priority
-                ></Image>
-              </Button>
-            </Link>
             <Link
               href="https://traderjoexyz.com/avalanche/trade?outputCurrency=0x8aD25B0083C9879942A64f00F20a70D3278f6187"
               rel="noopener noreferrer"
@@ -82,6 +58,29 @@ export default function Home() {
                 <Image
                   src={TJ_logo}
                   alt="TJ_logo"
+                  height={50}
+                  width={50}
+                  decoding="async"
+                  className="relative"
+                  priority
+                ></Image>
+              </Button>
+            </Link>
+            <Link
+              href="https://www.okx.com/web3/dex-swap#inputChain=43114&inputCurrency=0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e&outputChain=43114&outputCurrency=0x8ad25b0083c9879942a64f00f20a70d3278f6187"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                _hover={{ transform: "scale(1.05)" }}
+                _active={{
+                  transform: "scale(0.95)",
+                }}
+              >
+                <Image
+                  src={OKX_logo_white}
+                  alt="okx_logo_white"
                   height={50}
                   width={50}
                   decoding="async"
