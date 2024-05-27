@@ -5,6 +5,7 @@ import sleeping_meowcat from "@/public/assets/gifs/sleeping_meowcat.gif";
 import meow_head from "@/public/assets/images/meow_head.webp";
 import OKX_logo_white from "@/public/assets/logos/okx_dex_logo_white.svg";
 import OKX_logo_black from "@/public/assets/logos/okx_dex_logo.svg";
+import TJ_logo from "@/public/assets/logos/TJ_mark.png";
 
 import styles from "./styles.module.css";
 
@@ -37,15 +38,60 @@ export default function Home() {
             decoding="async"
             className="relative"
           ></Image>
-          <div id="trade" className="flex items-center gap-5 justify-center">
-            <a
-              className="text-xl font-bold drop-shadow-md"
-              href="https://traderjoexyz.com/avalanche/trade?outputCurrency=0x8aD25B0083C9879942A64f00F20a70D3278f6187"
-              target="_blank"
+          <div
+            id="trade"
+            className="flex items-center justify-center gap-2 flex-row"
+          >
+            <p className="">Trade on:</p>
+
+            <Link
+              href="https://www.okx.com/web3/dex-swap#inputChain=43114&inputCurrency=0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e&outputChain=43114&outputCurrency=0x8ad25b0083c9879942a64f00f20a70d3278f6187"
               rel="noopener noreferrer"
+              target="_blank"
             >
-              Trade
-            </a>
+              <Button
+                variant="ghost"
+                _hover={{ transform: "scale(1.05)" }}
+                _active={{
+                  transform: "scale(0.95)",
+                }}
+              >
+                <Image
+                  src={OKX_logo_white}
+                  alt="okx_logo_white"
+                  height={50}
+                  width={50}
+                  decoding="async"
+                  className="relative"
+                  priority
+                ></Image>
+              </Button>
+            </Link>
+            <Link
+              href="https://traderjoexyz.com/avalanche/trade?outputCurrency=0x8aD25B0083C9879942A64f00F20a70D3278f6187"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                _hover={{ transform: "scale(1.05)" }}
+                _active={{
+                  transform: "scale(0.95)",
+                }}
+              >
+                <Image
+                  src={TJ_logo}
+                  alt="TJ_logo"
+                  height={50}
+                  width={50}
+                  decoding="async"
+                  className="relative"
+                  priority
+                ></Image>
+              </Button>
+            </Link>
+          </div>
+          <div id="tools" className="flex items-center gap-5 justify-center">
             <a
               className="text-xl font-bold drop-shadow-md"
               href="https://dexscreener.com/avalanche/0xbbf8e4b9ad041ede1f5270caf5b7b41f0e55f719"
@@ -80,33 +126,6 @@ export default function Home() {
             >
               CoinMarketCap
             </a>
-          </div>
-          <div className="flex items-center justify-center gap-5 flex-row">
-            <p className="">Trade on:</p>
-
-            <Link
-              href="https://www.okx.com/web3/dex-swap#inputChain=43114&inputCurrency=0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e&outputChain=43114&outputCurrency=0x8ad25b0083c9879942a64f00f20a70d3278f6187"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <Button
-                variant="ghost"
-                _hover={{}}
-                _active={{
-                  transform: "scale(0.95)",
-                }}
-              >
-                <Image
-                  src={OKX_logo_white}
-                  alt="okx_logo_white"
-                  height={50}
-                  width={50}
-                  decoding="async"
-                  className="relative"
-                  priority
-                ></Image>
-              </Button>
-            </Link>
           </div>
 
           <div
