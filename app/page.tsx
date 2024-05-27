@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import sleeping_meowcat from "@/public/assets/gifs/sleeping_meowcat.gif";
 import meow_head from "@/public/assets/images/meow_head.webp";
@@ -9,6 +8,17 @@ import styles from "./styles.module.css";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 export default function Home() {
+  const copyToClipboard = (email: string) => {
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        alert("Email copied to clipboard!");
+      })
+      .catch((err) => {
+        console.error("Could not copy text: ", err);
+      });
+  };
+
   return (
     <div>
       <span className={styles.repeating}>meow</span>
@@ -140,8 +150,20 @@ export default function Home() {
             </a>
           </div>
           <div className="text-xs lg:text-base">
-            <p>Enquiries: meowcat@meowcat.xyz</p>
-            <p>Business: meowcat.avalaunche@gmail.com</p>
+            <p>
+              Enquiries:{" "}
+              <span onClick={() => copyToClipboard("meowcat@meowcat.xyz")}>
+                meowcat@meowcat.xyz
+              </span>
+            </p>
+            <p>
+              Business:{" "}
+              <span
+                onClick={() => copyToClipboard("meowcat.avalanche@gmail.com")}
+              >
+                meowcat.avalanche@gmail.com
+              </span>
+            </p>
           </div>
         </div>
       </main>
