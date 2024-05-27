@@ -16,6 +16,11 @@
   }
 }
 
+html,
+body {
+  @apply bg-meow-gradient; /* Use Tailwind utility classes for other properties */
+}
+
 body {
   background-image: linear-gradient(104deg, #fbbba4 55.79%, #fedcc1 115.73%);
 }

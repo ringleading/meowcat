@@ -20,7 +20,7 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="/meow_head.ico" />
       </Head>
-      <body>
+      <body className="bg-meow-gradient">
         <ChakraProvider>{children}</ChakraProvider>
       </body>
     </html>
