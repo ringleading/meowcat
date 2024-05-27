@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Head from "next/head";
 
+import { ChakraProvider } from "@chakra-ui/react";
+
 export const metadata: Metadata = {
   title: "Meow meow meow ...",
   description:
@@ -18,7 +20,9 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="/meow_head.ico" />
       </Head>
-      <body>{children}</body>
+      <body>
+        <ChakraProvider>{children}</ChakraProvider>
+      </body>
     </html>
   );
 }
