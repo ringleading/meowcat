@@ -1,8 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import sleeping_meowcat from "@/public/assets/gifs/sleeping_meowcat.gif";
 import meow_head from "@/public/assets/images/meow_head.webp";
 
 import styles from "./styles.module.css";
+
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 export default function Home() {
   return (
@@ -64,17 +68,28 @@ export default function Home() {
               CoinMarketCap
             </a>
           </div>
-          <div>
+          <div className="flex items-center justify-center gap-5">
             <p className="uppercase font-bold drop-shadow-md text-green-600 text-xl">
               We are now live on{" "}
               <a
                 href="https://www.okx.com/web3/dex-swap#inputChain=43114&inputCurrency=0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e&outputChain=43114&outputCurrency=0x8ad25b0083c9879942a64f00f20a70d3278f6187"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:cursor-pointer"
+                className=" hover:cursor-pointer"
               >
-                OKX
+                <span className="underline">OKX</span>{" "}
+                <ExternalLinkIcon className="mb-1"></ExternalLinkIcon>
               </a>
+              <iframe
+                referrerPolicy="no-referrer"
+                src="https://www.okx.com/web3/dex-swap#inputChain=43114&inputCurrency=0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e&outputChain=43114&outputCurrency=0x8ad25b0083c9879942a64f00f20a70d3278f6187"
+              />
+              <a
+                href="https://www.okx.com/web3/dex-swap#inputChain=43114&inputCurrency=0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e&outputChain=43114&outputCurrency=0x8ad25b0083c9879942a64f00f20a70d3278f6187"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:cursor-pointer"
+              ></a>
             </p>
           </div>
 
