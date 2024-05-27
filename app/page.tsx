@@ -1,11 +1,14 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import sleeping_meowcat from "@/public/assets/gifs/sleeping_meowcat.gif";
 import meow_head from "@/public/assets/images/meow_head.webp";
+import OKX_logo_white from "@/public/assets/logos/okx_dex_logo_white.svg";
+import OKX_logo_black from "@/public/assets/logos/okx_dex_logo.svg";
 
 import styles from "./styles.module.css";
 
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Button } from "@chakra-ui/react";
 
 export default function Home() {
   const copyToClipboard = (email: string) => {
@@ -78,29 +81,32 @@ export default function Home() {
               CoinMarketCap
             </a>
           </div>
-          <div className="flex items-center justify-center gap-5">
-            <p className="uppercase font-bold drop-shadow-md text-green-600 text-xl">
-              We are now live on{" "}
-              <a
-                href="https://www.okx.com/web3/dex-swap#inputChain=43114&inputCurrency=0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e&outputChain=43114&outputCurrency=0x8ad25b0083c9879942a64f00f20a70d3278f6187"
-                target="_blank"
-                rel="noopener noreferrer"
-                className=" hover:cursor-pointer"
+          <div className="flex items-center justify-center gap-5 flex-row">
+            <p className="">Trade on:</p>
+
+            <Link
+              href="https://www.okx.com/web3/dex-swap#inputChain=43114&inputCurrency=0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e&outputChain=43114&outputCurrency=0x8ad25b0083c9879942a64f00f20a70d3278f6187"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                _hover={{}}
+                _active={{
+                  transform: "scale(0.95)",
+                }}
               >
-                <span className="underline">OKX</span>{" "}
-                <ExternalLinkIcon className="mb-1"></ExternalLinkIcon>
-              </a>
-              <iframe
-                referrerPolicy="no-referrer"
-                src="https://www.okx.com/web3/dex-swap#inputChain=43114&inputCurrency=0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e&outputChain=43114&outputCurrency=0x8ad25b0083c9879942a64f00f20a70d3278f6187"
-              />
-              <a
-                href="https://www.okx.com/web3/dex-swap#inputChain=43114&inputCurrency=0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e&outputChain=43114&outputCurrency=0x8ad25b0083c9879942a64f00f20a70d3278f6187"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:cursor-pointer"
-              ></a>
-            </p>
+                <Image
+                  src={OKX_logo_white}
+                  alt="okx_logo_white"
+                  height={50}
+                  width={50}
+                  decoding="async"
+                  className="relative"
+                  priority
+                ></Image>
+              </Button>
+            </Link>
           </div>
 
           <div
