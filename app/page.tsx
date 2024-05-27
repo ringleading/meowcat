@@ -23,7 +23,7 @@ export default function Home() {
     <div>
       <span className={styles.repeating}>meow</span>
       <span className={styles.repeating_right}>meow</span>
-      <main className="grid h-screen place-items-center text-white">
+      <main className="grid h-screen place-items-center text-white overflow-y-auto">
         <div className="flex flex-col justify-center text-center gap-2">
           <Image
             src={sleeping_meowcat}
