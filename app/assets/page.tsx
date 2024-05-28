@@ -7,9 +7,9 @@ import meow_head from "@/public/assets/images/meow_head.webp";
 
 export default function Assets() {
   return (
-    <div>
+    <div className="">
       <a
-        className="absolute top-0 hover:scale-110 w-[60px] h-[60px] lg:w-[100px] lg:h-[100px]"
+        className="absolute top-0 left-4 hover:scale-110 w-[60px] h-[60px] lg:w-[100px] lg:h-[100px]"
         href="/"
       >
         <Image
@@ -22,7 +22,7 @@ export default function Assets() {
       <main className="container mx-auto text-white">
         <div
           id="content"
-          className="mt-12 mb-12 grid gap-10 px-5 lg:px-0 grid-cols-2 lg:grid-cols-4"
+          className="mt-4 mb-4 grid gap-10 px-5 lg:px-0 grid-cols-2 lg:grid-cols-4"
         >
           {images.map((image, index) => (
             <div key={index} className="flex justify-center">
