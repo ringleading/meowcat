@@ -139,7 +139,7 @@ export default function Home() {
                 height={100}
                 width={100}
                 decoding="async"
-                className="relative"
+                className="relative hover:scale-110 active:scale-95"
               ></Image>
             </a>
             <a className="text-xl font-bold drop-shadow-md" href="/assets">
